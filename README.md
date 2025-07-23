@@ -5,8 +5,9 @@ Generates strong random passwords based on user-selected options.
 ## Usage
 
 #### bash
-`gcc password_generator.c -o password_generator
-./password_generator`
+`gcc password_generator.c -o password_generator`
+
+`./password_generator`
 
 
 ## Features

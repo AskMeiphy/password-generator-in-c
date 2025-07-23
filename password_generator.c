@@ -3,7 +3,7 @@
 #include <time.h>
 #include <string.h>
 
-// Character sets
+
 const char *lowercase = "abcdefghijklmnopqrstuvwxyz";
 const char *uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const char *numbers = "0123456789";
@@ -14,7 +14,7 @@ void generatePassword(int length, int useLower, int useUpper, int useNumbers, in
     char password[256];
     int i;
 
-    // Build the character pool
+   
     if (useLower) strcat(allChars, lowercase);
     if (useUpper) strcat(allChars, uppercase);
     if (useNumbers) strcat(allChars, numbers);
@@ -27,10 +27,10 @@ void generatePassword(int length, int useLower, int useUpper, int useNumbers, in
 
     int poolSize = strlen(allChars);
 
-    // Seed random
+    
     srand(time(NULL));
 
-    // Generate password
+   
     for (i = 0; i < length; i++) {
         password[i] = allChars[rand() % poolSize];
     }
